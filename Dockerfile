@@ -11,7 +11,6 @@ ARG APP_HOME=/home/node/app
 # Make sure we don't run anything as the root user
 USER node
 
-WORKDIR $APP_HOME
 
 
 # ---------------
