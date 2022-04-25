@@ -19,7 +19,6 @@ WORKDIR $APP_HOME
 # ---------------
 FROM base as all_deps
 
-COPY --chown=node:node package.json package-lock.json ./
 
 RUN npm ci --no-optional --registry https://registry.npmjs.org/
 
