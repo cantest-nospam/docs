@@ -24,9 +24,7 @@ COPY --chown=node:node package.json package-lock.json ./
 RUN npm ci --no-optional --registry https://registry.npmjs.org/
 
 # For Next.js v12+
-# This the appropriate necessary extra for node:16-alpine
-# Other options are https://www.npmjs.com/search?q=%40next%2Fswc
-# RUN npm i @next/swc-linux-x64-musl --no-save
+
 
 
 # ---------------
